@@ -13,5 +13,5 @@ $ Started on port 8080
 
 # Usage
 
-![screenshot](https://raw.githubusercontent.com/netmilk/apify-badger/main/screenshot.png)
+![screenshot](https://github.com/netmilk/apify-badger/blob/main/screenshot.png?raw=true)
 
