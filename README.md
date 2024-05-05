@@ -1,6 +1,10 @@
 # apify-badger
 Generate README badges for public Apify Actors
 
+# Usage
+
+![screenshot](https://github.com/netmilk/apify-badger/blob/main/screenshot.png?raw=true)
+
 ## Install
 
 ```
@@ -11,7 +15,4 @@ $ node index.js
 $ Started on port 8080
 ```
 
-# Usage
-
-![screenshot](https://github.com/netmilk/apify-badger/blob/main/screenshot.png?raw=true)
 
