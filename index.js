@@ -42,8 +42,10 @@ app.get("/badge/:userName/:actorName", async (req,res) =>{
     notation: "compact",
     maximumFractionDigits: 1
   }).format(actor['stats']['totalUsers'])
+  
+  const defaultRunTag = actor['defaultRunOptions']['build']
 
-  const lastBuild = await client.build(actor['taggedBuilds']['latest']['buildId']).get()
+  const lastBuild = await client.build(actor['taggedBuilds'][defaultRunTag]['buildId']).get()
   const buildStatus =  lastBuild.status == 'SUCCEEDED' ? 'passing' : 'failing'
 
 
