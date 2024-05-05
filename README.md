@@ -1,4 +1,4 @@
-# apify-badger
+# apify-badger [EXPERIMENTAL]
 Generate README badges for public Apify Actors
 
 # Usage
