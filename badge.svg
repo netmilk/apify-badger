@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="398"
+   height="56"
+   viewBox="0 0 398 56"
+   sodipodi:docname="badge.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.0964482"
+     inkscape:cx="157.27697"
+     inkscape:cy="24.54425"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <g
+     id="layer1"
+     inkscape:label="New"
+     style="display:inline">
+    <rect
+       style="fill:#f4f4f2;fill-opacity:1;stroke:#ff9013;stroke-width:1.88976;stroke-dasharray:none;stroke-opacity:1"
+       id="rect6"
+       width="398"
+       height="56"
+       x="0"
+       y="0"
+       inkscape:label="rect6" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#4d4d4d;fill-opacity:1;stroke:none"
+       x="68.428253"
+       y="22.649876"
+       id="text6"><tspan
+         sodipodi:role="line"
+         x="68.428253"
+         y="22.649876"
+         id="tspan9">$ apify run netmilk/sherlock</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#4d4d4d;fill-opacity:1;stroke:none"
+       x="68.129425"
+       y="38.591351"
+       id="text6-8"><tspan
+         sodipodi:role="line"
+         id="tspan6-9"
+         x="68.129425"
+         y="38.591351">passing | 120 users | 5k runs | last 3 hours ago</tspan></text>
+  </g>
+  <g
+     id="g8"
+     transform="matrix(0.20333453,0,0,0.20333453,16.679403,14.347975)"
+     style="stroke:none;stroke-width:4.91801;stroke-opacity:1">
+    <path
+       class="cls-1"
+       d="M 17,12.59 A 19.2,19.2 0 0 0 0.57,34.25 v 0 L 11.93,115.37 59.72,6.62 Z"
+       id="path1"
+       style="fill:#97d700;stroke:none;stroke-width:4.91801;stroke-opacity:1" />
+    <path
+       class="cls-2"
+       d="M 132.28,80.18 127.81,17.81 A 19.22,19.22 0 0 0 107.3,0.05 9.11,9.11 0 0 0 106,0.19 l -18.43,2.54 40.52,90.85 a 19.13,19.13 0 0 0 4.19,-13.4 z"
+       id="path2"
+       style="fill:#71c5e8;stroke:none;stroke-width:4.91801;stroke-opacity:1" />
+    <path
+       class="cls-3"
+       d="M 29.36,135.1 A 19.06,19.06 0 0 0 39,133.7 L 108.58,104.34 75.43,30.16 Z"
+       id="path3"
+       style="fill:#ff9013;stroke:none;stroke-width:4.91801;stroke-opacity:1" />
+  </g>
+</svg>
