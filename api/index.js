@@ -3,7 +3,6 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
-import config from './config.json'  with { type: "json" }
 import { ApifyClient } from 'apify-client'
 import path from 'node:path'
 
@@ -13,6 +12,13 @@ TimeAgo.addDefaultLocale(en)
 
 const timeAgo = new TimeAgo('en-US')
 const client = new ApifyClient()
+
+const config = {
+        "port": 8080,
+        "bodyLimit": "100kb",
+        "corsHeaders": ["Link"]
+}
+
 
 let app = express();
 
