@@ -11,8 +11,9 @@ Generate README badges for public Apify Actors
 $ git clone https://github.com/netmilk/apify-badger.git
 $ cd apify-badger
 $ npm install
-$ node index.js
-$ Started on port 8080
+$ vercel dev
+Vercel CLI 34.1.8
+> Ready! Available at http://localhost:3000
 ```
 
 
