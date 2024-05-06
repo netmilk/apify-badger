@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import config from './config.json'  with { type: "json" }
 import { ApifyClient } from 'apify-client'
+import path from 'node:path'
 
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en'
@@ -17,6 +18,7 @@ let app = express();
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
+app.set('views', path.join(process.cwd(), './api/views'))
 
 app.server = http.createServer(app);
 
