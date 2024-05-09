@@ -62,10 +62,10 @@ app.get("/badge/:userName/:actorName", async (req,res) =>{
     maximumFractionDigits: 1
   }).format(actor['stats']['totalRuns']);
   
-  let templateName = "classic"
+  let templateName = "apify"
 
-  if(req['query']['type'] == "apify"){
-    templateName = 'apify'
+  if(req['query']['type'] == "classic"){
+    templateName = 'classic'
   }
 
   res.render(templateName, {
