@@ -45,7 +45,7 @@ app.get("/badge/:userName/:actorName", async (req,res) =>{
   res.setHeader('Content-Type', 'image/svg+xml');
 
   const actor = await client.actor(req['params']['userName'] + '/' + req['params']['actorName']).get()
-  const ago = timeAgo.format(new Date(actor['stats']['lastRunStartedAt']))
+  const ago = timeAgo.format(new Date(actor['stats']['lastRunStartedAt']), 'mini') + " ago"
   const users = Intl.NumberFormat('en-US', {
     notation: "compact",
     maximumFractionDigits: 1
@@ -61,8 +61,14 @@ app.get("/badge/:userName/:actorName", async (req,res) =>{
     notation: "compact",
     maximumFractionDigits: 1
   }).format(actor['stats']['totalRuns']);
+  
+  let templateName = "classic"
 
-  res.render('badge', {
+  if(req['query']['type'] == "apify"){
+    templateName = 'apify'
+  }
+
+  res.render(templateName, {
     actor,
     ago,
     runs,
