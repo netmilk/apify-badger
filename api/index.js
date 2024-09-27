@@ -4,19 +4,31 @@ import cors from 'cors';
 import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import { ApifyClient } from 'apify-client'
+import { Actor } from 'apify'
+
 import path from 'node:path'
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en'
 TimeAgo.addDefaultLocale(en)
 
+
 const timeAgo = new TimeAgo('en-US')
 const client = new ApifyClient()
+await Actor.init();
 
+//console.log(process.env)
 const config = {
-        "port": 8080,
-        "bodyLimit": "100kb",
-        "corsHeaders": ["Link"]
+
+  "port": process.env.ACTOR_STANDBY_PORT,
+  //"port": Actor.config.get('standbyPort'),
+  "bodyLimit": "100kb",
+  "corsHeaders": ["Link"]
 }
 
 
@@ -24,7 +36,8 @@ let app = express();
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-app.set('views', path.join(process.cwd(), './api/views'))
+
+app.set('views', path.join(__dirname, './views'))
 
 app.server = http.createServer(app);
 
@@ -77,7 +90,8 @@ app.get("/badge/:userName/:actorName", async (req,res) =>{
   })
 })
 
-app.server.listen(process.env.PORT || config.port, () => {
+console.log("config", config)
+app.server.listen( config.port, () => {
   console.log(`Started on port ${app.server.address().port}`);
 });
 

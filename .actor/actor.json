@@ -1,0 +1,14 @@
+{
+	"actorSpecification": 1,
+	"name": "apify-badger",
+	"title": "Apify Github Readme Badge Server",
+	"description": "Apify Github Readme implemented as Apify Standby Actor in JavaScript.",
+	"version": "0.0",
+	"buildTag": "latest",
+	"usesStandbyMode": true,
+	"dockerfile": "./Dockerfile",
+  "meta": {
+		"templateId": "js-standby"
+	}
+  
+}
